@@ -1,0 +1,18 @@
+
+Electronics
+
+1. Computer - Jetson Nano
+
+2. Controller and motors
+- Pixhawk flight controller
+
+3. Sensors - used to detect potential issues such as blade damage
+- LIDAR
+- theraml cameras
+- hi-res optical cameras
+
+
+Design
+1. Chasis
+2. Sensor Mounts
+3. Blades

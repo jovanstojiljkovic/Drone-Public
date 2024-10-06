@@ -36,3 +36,10 @@ ros2 topic pub /test_topic std_msgs/msg/String 'data: "Hello from Jetson!"'
 ros2 topic echo /test_topic
 #This prints the string "Hello from Jetson!" on the VM's terminal.
 
+#Using ROS2's build in DDS for streaming a video from Jetson to VM:
+#First command uses the built in image_tools package for retreiving the video from the camera and automatically sends it to the default publisher node
+ros2 run image_tools cam2imageros2 run image_tools cam2image --ros-args -p frequency:=30.0 -p resolution:=[640,480]
+#The parameters send an uncompressed video at 30fps and resolution of 640x480 using TCP protocol
+#Second command uses the same package for retreiving the stream on the subscriber node and displays it with specified  settings:
+ros2 run image_tools showimage
+

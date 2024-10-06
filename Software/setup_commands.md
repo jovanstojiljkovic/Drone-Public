@@ -29,3 +29,10 @@ source /opt/ros/eloquent/setup.bash
 # Add previous line to ~/.bashrc file, to automatically source the setup on each terminal start
 echo "source /opt/ros/eloquent/setup.bash" >> ~/.bashrc
 source ~/.bashrc
+#Test connection between two machines (Jetson and VM)) running ROS2 (eloquent and Foxy respectively)
+#First command runs the publisher node on the jetson:
+ros2 topic pub /test_topic std_msgs/msg/String 'data: "Hello from Jetson!"'
+#Second command runs the subscriber node on the VM:
+ros2 topic echo /test_topic
+#This prints the string "Hello from Jetson!" on the VM's terminal.
+

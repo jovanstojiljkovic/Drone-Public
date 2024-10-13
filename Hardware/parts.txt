@@ -8,7 +8,7 @@ Electronics
 
 3. Sensors - used to detect potential issues such as blade damage
 - LIDAR
-- theraml cameras
+- thermal cameras
 - hi-res optical cameras
 
 

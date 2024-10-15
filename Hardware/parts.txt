@@ -3,8 +3,10 @@ Electronics
 
 1. Computer - Jetson Nano
 
+
 2. Controller and motors
 - Pixhawk flight controller
+- Arduino Nano - sensor interface and IMU
 
 3. Sensors - used to detect potential issues such as blade damage
 - LIDAR
@@ -16,3 +18,4 @@ Design
 1. Chasis
 2. Sensor Mounts
 3. Blades
+

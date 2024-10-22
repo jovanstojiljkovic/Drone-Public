@@ -1,3 +1,4 @@
+
 import cv2
 import os
 import torch
@@ -20,7 +21,7 @@ model_configs = {
 encoder = 'vits'  # or 'vits', 'vitb', 'vitg'
 
 model = DepthAnythingV2(**model_configs[encoder])
-model.load_state_dict(torch.load(f'checkpoints/depth_anything_v2_{encoder}.pth', map_location='mps'))
+model.load_state_dict(torch.load(f'checkpoints/depth_anything_v2_{encoder}.pth', map_location='cuda'))
 model = model.to(DEVICE).eval()
 
 # Open webcam for live video capture
@@ -31,7 +32,7 @@ if not cap.isOpened():
     exit()
 
 # Colormap for depth visualization
-cmap = matplotlib.colormaps.get_cmap('Spectral_r')
+# cmap = matplotlib.colormaps.get_cmap('Spectral_r')
 
 def preprocess_frame(frame):
     # Resize the frame to a smaller size, e.g., 256x256, for faster processing
@@ -61,13 +62,13 @@ while True:
     depth_normalized = depth_normalized.astype(np.uint8)
 
     # Apply colormap to the depth image
-    depth_colored = (cmap(depth_normalized)[:, :, :3] * 255).astype(np.uint8)
+    # depth_colored = (cmap(depth_normalized)[:, :, :3] * 255).astype(np.uint8)
 
     # Add a split region between images (white space)
-    split_region = np.ones((frame.shape[0], 50, 3), dtype=np.uint8) * 255
+    #split_region = np.ones((frame.shape[0], 50, 3), dtype=np.uint8) * 255
 
     # Combine the original frame and the depth-colored frame side by side
-    combined_result = cv2.hconcat([frame, split_region, depth_colored[:, :, ::-1]])  # Convert to BGR for OpenCV
+    #combined_result = cv2.hconcat([frame, split_region, depth_normalized[:, :, ::-1]])  # Convert to BGR for OpenCV
 
     # Measure end time and calculate latency
     end_time = time.time()
@@ -75,10 +76,10 @@ while True:
    
     # Display the latency on the OpenCV window
     latency_text = f"Latency: {latency:.4f} ms"
-    cv2.putText(combined_result, latency_text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
+    cv2.putText(depth_normalized, latency_text, (10, 30), cv2.FONT_HERSHEY_SIMPLEX, 1, (0, 255, 0), 2)
 
     # Display the resulting frame
-    cv2.imshow('Live Video and Depth Map', combined_result)
+    cv2.imshow('Live Video and Depth Map', depth_normalized)
 
     # Break the loop if 'q' is pressed
     if cv2.waitKey(1) & 0xFF == ord('q'):

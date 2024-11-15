@@ -1,0 +1,25 @@
+running egg_info
+writing ../../build/quadcopter_v1/quadcopter_v1.egg-info/PKG-INFO
+writing dependency_links to ../../build/quadcopter_v1/quadcopter_v1.egg-info/dependency_links.txt
+writing entry points to ../../build/quadcopter_v1/quadcopter_v1.egg-info/entry_points.txt
+writing requirements to ../../build/quadcopter_v1/quadcopter_v1.egg-info/requires.txt
+writing top-level names to ../../build/quadcopter_v1/quadcopter_v1.egg-info/top_level.txt
+reading manifest file '../../build/quadcopter_v1/quadcopter_v1.egg-info/SOURCES.txt'
+writing manifest file '../../build/quadcopter_v1/quadcopter_v1.egg-info/SOURCES.txt'
+running build
+running build_py
+copying quadcopter_v1/sensor_reader.py -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/build/quadcopter_v1/build/lib/quadcopter_v1
+copying quadcopter_v1/__init__.py -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/build/quadcopter_v1/build/lib/quadcopter_v1
+running install
+running install_lib
+running install_data
+copying resource/quadcopter_v1 -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/install/quadcopter_v1/share/ament_index/resource_index/packages
+copying package.xml -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/install/quadcopter_v1/share/quadcopter_v1
+copying models/quadcopter_with_camera.sdf -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/install/quadcopter_v1/share/quadcopter_v1/models
+copying launch/launch.py -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/install/quadcopter_v1/share/quadcopter_v1/launch
+running install_egg_info
+removing '/Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/install/quadcopter_v1/lib/python3.11/site-packages/quadcopter_v1-0.0.0-py3.11.egg-info' (and everything under it)
+Copying ../../build/quadcopter_v1/quadcopter_v1.egg-info to /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/install/quadcopter_v1/lib/python3.11/site-packages/quadcopter_v1-0.0.0-py3.11.egg-info
+running install_scripts
+Installing sensor_reader script to /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/install/quadcopter_v1/lib/quadcopter_V1
+writing list of installed files to '/Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/build/quadcopter_v1/install.log'

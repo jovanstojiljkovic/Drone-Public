@@ -1,0 +1,3 @@
+[console_scripts]
+control = quadcopter_v1.control:main
+sensor_reader = quadcopter_v1.sensor_reader:main

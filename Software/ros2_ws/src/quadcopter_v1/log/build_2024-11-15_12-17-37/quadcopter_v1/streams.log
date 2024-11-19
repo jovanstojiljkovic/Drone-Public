@@ -1,0 +1,30 @@
+[0.903s] Invoking command in '/Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/prefix_override:/Users/jakobc/miniforge3/envs/ros_env/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/install/quadcopter_v1/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/jakobc/miniforge3/envs/ros_env/bin/env /Users/jakobc/miniforge3/envs/ros_env/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/quadcopter_v1 build --build-base /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/build install --record /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/install.log --single-version-externally-managed install_data
+[1.287s] running egg_info
+[1.303s] writing build/quadcopter_v1/quadcopter_v1.egg-info/PKG-INFO
+[1.304s] writing dependency_links to build/quadcopter_v1/quadcopter_v1.egg-info/dependency_links.txt
+[1.304s] writing entry points to build/quadcopter_v1/quadcopter_v1.egg-info/entry_points.txt
+[1.304s] writing requirements to build/quadcopter_v1/quadcopter_v1.egg-info/requires.txt
+[1.304s] writing top-level names to build/quadcopter_v1/quadcopter_v1.egg-info/top_level.txt
+[1.336s] reading manifest file 'build/quadcopter_v1/quadcopter_v1.egg-info/SOURCES.txt'
+[1.337s] writing manifest file 'build/quadcopter_v1/quadcopter_v1.egg-info/SOURCES.txt'
+[1.338s] running build
+[1.338s] running build_py
+[1.338s] copying quadcopter_v1/control.py -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/build/lib/quadcopter_v1
+[1.339s] copying quadcopter_v1/sensor_reader.py -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/build/lib/quadcopter_v1
+[1.339s] copying quadcopter_v1/__init__.py -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/build/lib/quadcopter_v1
+[1.339s] copying quadcopter_v1/sensor_debug.py -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/build/lib/quadcopter_v1
+[1.340s] running install
+[1.345s] running install_lib
+[1.363s] running install_data
+[1.363s] copying resource/quadcopter_v1 -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/install/quadcopter_v1/share/ament_index/resource_index/packages
+[1.364s] copying package.xml -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/install/quadcopter_v1/share/quadcopter_v1
+[1.365s] copying models/quadcopter_with_camera.sdf -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/install/quadcopter_v1/share/quadcopter_v1/models
+[1.365s] copying launch/launch.py -> /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/install/quadcopter_v1/share/quadcopter_v1/launch
+[1.366s] running install_egg_info
+[1.384s] removing '/Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/install/quadcopter_v1/lib/python3.11/site-packages/quadcopter_v1-0.0.0-py3.11.egg-info' (and everything under it)
+[1.385s] Copying build/quadcopter_v1/quadcopter_v1.egg-info to /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/install/quadcopter_v1/lib/python3.11/site-packages/quadcopter_v1-0.0.0-py3.11.egg-info
+[1.388s] running install_scripts
+[1.505s] Installing control script to /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/install/quadcopter_v1/lib/quadcopter_V1
+[1.505s] Installing sensor_reader script to /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/install/quadcopter_v1/lib/quadcopter_V1
+[1.506s] writing list of installed files to '/Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/install.log'
+[1.536s] Invoked command in '/Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1' returned '0': CONDA_PROMPT_MODIFIER=(ros_env) PYTHONPATH=/Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/prefix_override:/Users/jakobc/miniforge3/envs/ros_env/lib/python3.11/site-packages/colcon_core/task/python/colcon_distutils_commands:/Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/install/quadcopter_v1/lib/python3.11/site-packages:${PYTHONPATH} SHLVL=2 _=/Users/jakobc/miniforge3/envs/ros_env/bin/env /Users/jakobc/miniforge3/envs/ros_env/bin/python3.11 -W ignore:setup.py install is deprecated setup.py egg_info --egg-base build/quadcopter_v1 build --build-base /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/build install --record /Users/jakobc/Documents/GitHub/Drone/Software/ros2_ws/src/quadcopter_v1/build/quadcopter_v1/install.log --single-version-externally-managed install_data

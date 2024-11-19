@@ -1,0 +1,8 @@
+<?xml version="1.0" ?>
+<sdf version="1.6">
+  <world name="ros_world">
+    <!-- Include the Gazebo ROS factory plugin -->
+    
+  </world>
+</sdf>
+

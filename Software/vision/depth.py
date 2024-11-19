@@ -5,11 +5,13 @@ import torch
 import numpy as np
 import matplotlib
 import time
+# import torch_tensorrt
 
 from depth_anything_v2.dpt import DepthAnythingV2
 
 
-DEVICE = 'cuda' if torch.cuda.is_available() else 'mps' if torch.backends.mps.is_available() else 'cpu'
+DEVICE = 'cuda' if torch.cuda.is_available() else 'cpu'
+print(f"Using device: {DEVICE}")
 
 model_configs = {
     'vits': {'encoder': 'vits', 'features': 64, 'out_channels': [48, 96, 192, 384]},
@@ -23,6 +25,9 @@ encoder = 'vits'  # or 'vits', 'vitb', 'vitg'
 model = DepthAnythingV2(**model_configs[encoder])
 model.load_state_dict(torch.load(f'checkpoints/depth_anything_v2_{encoder}.pth', map_location='cuda'))
 model = model.to(DEVICE).eval()
+
+# Convert model to TensorRT for better performance
+#model_trt = torch_tensorrt.compile(model, inputs=[torch_tensorrt.Input((1, 3, 256, 256))], enabled_precisions={torch.float32})
 
 # Open webcam for live video capture
 cap = cv2.VideoCapture(0)  # 0 is usually the default camera index

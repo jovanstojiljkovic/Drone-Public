@@ -19,4 +19,4 @@ Furthermore, the UAV will be programmed to execute specific flight paths as dict
 - **Flight Path Programming:** Implement autonomous flight capabilities that allow the UAV to follow predefined paths tailored to the scanning needs.
 - **Testing and Validation:** Conduct test flights in a drone flight area, using an optical tracking system to monitor and refine the UAV’s performance.
   
-This project will provide hands-on experience in UAV construction, sensor integration, and autonomous flight programming, while addressing a real-world problem in the maintenance of renewable energy infrastructure.  yes.
+This project will provide hands-on experience in UAV construction, sensor integration, and autonomous flight programming, while addressing a real-world problem in the maintenance of renewable energy infrastructure.  

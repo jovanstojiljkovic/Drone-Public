@@ -37,8 +37,7 @@ for fname in images:
         objpoints.append(objp)
         cv2.cornerSubPix(gray, corners, (3, 3), (-1, -1), subpix_criteria)
         imgpoints.append(corners)
-        
-        # Add this block for debugging
+      
         cv2.drawChessboardCorners(img, CHECKERBOARD, corners, ret)
         cv2.imshow('Chessboard', img)
         cv2.waitKey(500)  # Wait for 500 ms to view the image with corners drawn
